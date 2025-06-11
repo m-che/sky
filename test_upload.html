@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Test</title>
+</head>
+<body>
+    <div id="upload-area" onclick="triggerFileUpload()" style="border: 2px dashed #ccc; padding: 20px; cursor: pointer;">
+        Click here to upload
+    </div>
+    <input type="file" id="video-input" multiple style="display: none;">
+    
+    <script>
+        function triggerFileUpload() {
+            console.log('Function called!');
+            document.getElementById('video-input').click();
+        }
+        
+        document.getElementById('video-input').addEventListener('change', function(e) {
+            console.log('Files selected:', e.target.files.length);
+        });
+    </script>
+</body>
+</html>

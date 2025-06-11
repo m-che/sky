@@ -1,0 +1,15 @@
+matplotlib
+scikit-image
+scikit-learn
+scipy
+numpy
+torch
+torchvision
+opencv-python
+opencv-contrib-python
+fastapi 
+uvicorn
+python-multipart
+jinja2
+aiofiles
+pillow
